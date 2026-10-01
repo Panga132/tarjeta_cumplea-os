@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¡Feliz cumpleaños!</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR: cada href coincide con el id de una sección -->
+<header class="nav">
+  <a class="brand" href="#inicio"><span class="deco" data-balloon="#FFD54F"></span>BIRTHDAY</a>
+  <button class="burger" aria-label="Abrir menú" aria-expanded="false"><i></i><i></i><i></i></button>
+  <nav id="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#fotos">Fotos</a>
+    <a href="#mensaje">Mensaje</a>
+    <a href="#recuerdos">Recuerdos</a>
+    <a href="#felicitacion">Feliz Cumpleaños</a>
+  </nav>
+</header>
+
+<!-- INICIO -->
+<section id="inicio" class="hero">
+  <div class="confetti" data-n="30"></div>
+  <div class="stars" data-n="18"></div>
+  <span class="fw" style="left:8%;top:16%;--d:0s"  data-fw="#FFD54F"></span>
+  <span class="fw" style="right:9%;top:12%;--d:1.6s" data-fw="#F8BBD0"></span>
+  <span class="fw sm" style="left:30%;top:8%;--d:3s" data-fw="#FF9800"></span>
+  <span class="balloon" style="left:3%;bottom:14%" data-balloon="#EF5350"></span>
+  <span class="balloon b2" style="left:13%;bottom:30%" data-balloon="#FFD54F"></span>
+  <span class="balloon" style="right:3%;bottom:16%;--s:1.1" data-balloon="#F8BBD0"></span>
+  <span class="balloon b2" style="right:13%;bottom:32%" data-balloon="#FF9800"></span>
+  <div class="hero-in">
+    <div class="cake" data-cake></div>
+    <h1>¡FELIZ<br>CUMPLEAÑOS!</h1>
+    <p class="persona" id="persona"></p>
+    <p class="lead">Hoy celebramos a una persona muy especial.</p>
+    <p class="small">Qué bonito coincidir contigo en esta vida.</p>
+    <a class="btn" href="#fotos">VER LA SORPRESA ↓</a>
+  </div>
+</section>
+
+<!-- FOTOS (las tarjetas las crea script.js según los archivos que existan) -->
+<section id="fotos" class="sec fotos">
+  <div class="head reveal">
+    <h2>UNA SONRISA PUEDE CAMBIAR TODO</h2>
+    <p>Porque no hay nada que caracterice mejor a Julian que siempre estar sonriendo.</p>
+  </div>
+  <div class="wall" id="wall"></div>
+</section>
+
+<!-- MENSAJE: edita el texto aquí -->
+<section id="mensaje" class="sec mensaje">
+  <div class="head reveal"><h2>Y QUERÍAMOS DECIRTE ALGO...</h2></div>
+  <div class="notes">
+    <article class="note reveal"><p><b>Feliz cumpleaños al mejor papá del mundo.</b></p><p>No sabes lo feliz y orgulloso que me hace poder llamarte mi papá. Te amo muchísimo y agradezco todos los días por tenerte en mi vida, gracias por ser esa persona que siempre ha estado para mí, por tus enseñanzas, tus consejos, tus esfuerzos y por todo el amor que me has dado.
+Espero que hoy recibas todo el cariño que mereces y que la vida me permita compartir contigo muchísimos cumpleaños más, quiero que sepas que siempre voy a estar para ti, así como tú lo has estado para mí
+Te amo con todo mi corazón papá, espero algún día poder hacerte sentir tan orgulloso de mí como yo me siento de ti. ❤️🥳</p><p><b>Att: Juan</b></p></article>
+    <article class="note reveal"><p>Feliz cumple papi. Solo quiero que sepas que te amo con toda mi alma y que agradezco demasiado poder tenerte en mi vida. Espero que Dios te dé muchísimos años más de vida.❤️</p><p><b>Att: Pepita</b></p></article>
+    <article class="note reveal"><p>Que este cumpelaños sea tan especial como tu lo eres para las personas que te rodean. Un feliz cumpleaños Juli, muchas gracias por todo el apoyo, todo el cariño y las risas que brindas no solo a mi sino a la familia, le agradezco mucho a Dios por ponerte en la vida de mi hermana y por consiguiente en la nuestra, espero poder seguir compartiendo muchos más cumpleaños y buenos momentos</p><p><b>Att: Migue</b></p></article>
+    <article class="note reveal"><p>¡Feliz cumpleaños, mi amor! Gracias por ser mi compañero de vida, mi apoyo incondicional.  Que este nuevo año te traiga tanta felicidad como la que tú nos das todos los días. 
+
+Mi amor a tu lado la vida es más bonita y llena de propósito. ¡Feliz cumple, esposito!</p><p><b>Tu esposita</b></p></article>
+   
+    <article class="note big reveal"><p>En este día especial Recibe toda nuestra admiración por tus logros profesionalesy personales y la familia que has construido. 
+Felicitaciones y que Dios acreciente en ti cada día más esas virtudes que te hacen un buen padre, esposo, y profesional. Para que sirvas con amor, teniendo como meta El Cielo.feliz cumpleaños</p><p><b>Att: Eucaris y John</b></p></article>
+
+  </div>
+</section>
+
+<!-- RECUERDOS (fotos + frases mezcladas por script.js) -->
+<section id="recuerdos" class="sec recuerdos">
+  <div class="stars" data-n="14"></div>
+  <div class="head reveal"><h2>PEQUEÑOS MOMENTOS, GRANDES RECUERDOS</h2></div>
+  <div class="mix" id="mix"></div>
+</section>
+
+<!-- FELICITACIÓN -->
+<section id="felicitacion" class="final">
+  <div class="confetti" data-n="26"></div>
+  <div class="stars" data-n="16"></div>
+  <span class="fw" style="left:7%;top:10%;--d:.5s" data-fw="#FFD54F"></span>
+  <span class="fw" style="right:8%;top:14%;--d:2s" data-fw="#F8BBD0"></span>
+  <span class="balloon" style="left:4%;bottom:10%" data-balloon="#F8BBD0"></span>
+  <span class="balloon b2" style="right:4%;bottom:12%" data-balloon="#EF5350"></span>
+  <div class="hero-in reveal">
+    <h2 class="big">HOY ES TU DÍA</h2>
+    <p class="feliz">Feliz cumpleaños <span class="heart">❤</span></p>
+    <div class="cake" data-cake></div>
+    <p class="lead">Gracias por existir,<br>por ser tú<br>y por permitirnos coincidir contigo.</p>
+    <p class="small">Y si alguna vez dudas de lo especial que eres para nosotros, vuelve a esta página. ❤️</p>
+    <a class="btn" href="#inicio">VOLVER AL INICIO ↑</a>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
